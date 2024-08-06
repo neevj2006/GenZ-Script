@@ -1,0 +1,49 @@
+# VAR --> FAX
+# AND --> PLUS
+# OR --> ORNAH
+# NOT --> NOPE
+# IF --> LOWKEY
+# ELIF --> MIDKEY
+# ELSE --> HIGHKEY
+# FOR --> ONREPEAT
+# TO --> TO
+# STEP --> HOP
+# WHILE --> BINGE
+# FUN --> VIBE
+# THEN --> NEXTUP
+# END --> MICDROP
+# RETURN --> SENDITBACK
+# CONTINUE --> KEEPSLAYIN
+# BREAK --> GHOST
+
+# This is a very useful piece of software
+
+VIBE oopify(prefix) -> prefix + "oop"
+
+VIBE join(elements, separator)
+	FAX result = ""
+	FAX len = LEN(elements)
+
+	ONREPEAT i = 0 TO len NEXTUP
+		FAX result = result + elements/i
+		LOWKEY i != len - 1 NEXTUP FAX result = result + separator
+	MICDROP
+
+	SENDITBACK result
+MICDROP
+
+VIBE map(elements, func)
+	FAX new_elements = []
+
+	ONREPEAT i = 0 TO LEN(elements) NEXTUP
+		APPEND(new_elements, func(elements/i))
+	MICDROP
+
+	SENDITBACK new_elements
+MICDROP
+
+PRINT("Greetings universe!")
+
+ONREPEAT i = 0 TO 5 NEXTUP
+	PRINT(join(map(["l", "sp"], oopify), ", "))
+MICDROP
